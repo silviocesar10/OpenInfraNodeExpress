@@ -4,7 +4,7 @@ class Manutencao extends Model {
 
   static init(sequelize) {
     super.init({
-      descricacao: { 
+      descricao: { 
         type: DataTypes.STRING, 
         validate: {
           notEmpty: { msg: "O Login do Manutencao deve ser preenchido!" },
