@@ -23,10 +23,10 @@ function databaseInserts() {
 
         await sequelize.sync({ force: true }); 
 
-        const user1 = await Usuario.create({ nome: "teste", login: "teste", senha:"1234", setor:"setor1" });
-        const user2 = await Usuario.create({ nome: "teste2", login: "teste2", senha:"1234", setor:"setor1" });
-        const mq1 = await Maquina.create({ nome: "mq1", modelo: "dell", productKey:"1234", usuarioId: 1 });
-        const mq2 = await Maquina.create({ nome: "mq2", modelo: "dell", productKey:"1234", usuarioId: 2 });
+        const user1 = await Usuario.create({ nome: "teste", login: "teste", senha: "1234", setor:"setor1" });
+        const user2 = await Usuario.create({ nome: "teste2", login: "teste2", senha: "1234", setor:"setor1" });
+        const mq1 = await Maquina.create({ nome: "mq1", modelo: "dell", productkey: "1234", usuarioId: 1 });
+        const mq2 = await Maquina.create({ nome: "mq2", modelo: "dell", productkey: "1234", usuarioId: 2 });
         const mnt1 = await Manutencao.create({ descricao: "manutencao 1", data: "2023-04-12", maquinaId: 1 });
         const mnt2 = await Manutencao.create({ descricao: "manutencao 2", data: "2023-04-12", maquinaId: 2 });
 
